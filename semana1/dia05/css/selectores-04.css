@@ -1,0 +1,25 @@
+
+
+/* nth-child: posición */
+li:nth-child(3){
+    color:blue;
+}
+li:first-child{
+    color:red;
+}
+li:last-child{
+    color:salmon;
+}
+
+/*  odd - even */
+tbody tr:nth-child(odd){
+    background: purple;
+}
+
+tbody tr:nth-child(even){
+    background: red;
+}
+
+thead{
+    background: greenyellow;
+}
