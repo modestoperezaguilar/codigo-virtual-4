@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="inputNombre">Nombre completo:</label>
+                </td>
+                <td>
+                    <input type="text" id="inputNombre"                     
+                    placeholder="Ingrese nombre completo" 
+                    pattern="[a-z]{1,9}"
+                    minlength="2"
+                    maxlength="7"
+                    required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputEdad">Edad:</label>
+                </td>
+                <td>
+                    <input type="number" id="inputEdad" 
+                    placeholder="Ingrese su edad"
+                    min="0"
+                    max="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputFechaNacimiento">Fecha de nacimiento:</label>
+                </td>
+                <td>
+                    <input type="date" id="inputFechaNacimiento" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputcolor">Color</label>
+                </td>
+                <td>
+                    <input type="color" id="inputcolor">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Genero</label>
+                </td>
+                <td>
+                    <label for="inputRadioM">Masculino</label>
+                    <input type="radio" id="inputRadioM" name="genero" />
+
+                    <label for="inputRadioF">Femenino</label>
+                    <input type="radio" id="inputRadioF" name="genero" />
+
+                    <label for="inputRadioO">Otro</label>
+                    <input type="radio" id="inputRadioO" name="genero" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Idiomas</label>
+                <td>
+                    <label for="checkIngles">Inglés</label>
+                    <input type="checkbox" id="checkIngles">
+
+                    <label for="checkEspañol">Español</label>
+                    <input type="checkbox" id="checkEspañol">
+
+                    <label for="checkPortugues">Portugués</label>
+                    <input type="checkbox" id="checkPortugues">
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputEmail">Email</label>
+                </td>
+                <td>
+                    <input type="email" value="@gmail.com" placeholder="Ingrese su Email" id="inputEmail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputPasword">Password</label>
+                </td>
+                <td>
+                    <input type="password" id="inputPasword">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtAreaComentario">Comentarios</label>
+                </td>
+                <td>
+                    <textarea id="txtAreaComentario" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="slcDepartamentos">Seleccione su Departamento</label>
+                </td>
+                <td>
+                    <select name="" id="slcDepartamentos">
+                        <option value="">Seleccione Departamento</option>
+                        <option value="">Arequipa</option>
+                        <option value="">Lima</option>
+                        <option value="">Tacna</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="inputFileSubirArchivo">Subir Archivo</label>
+                </td>
+                <td>
+                    <input type="file" id="inputFileSubirArchivo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Acciones</label>
+                </td>
+                <td>
+                    <input type="submit" value="Registrarme">
+                    <input type="reset" value="Limpiar Formulario">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
